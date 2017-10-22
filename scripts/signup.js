@@ -131,6 +131,8 @@ $(".submit").click(function() {
     };
     localStorage.setItem("user",JSON.stringify(user1));
     var user = JSON.parse(localStorage.getItem('user'));
+    $("#signup-toggle").css("font-family", "Libre Baskerville")
+    $("#signup-toggle").html("<h1>Registration Successful</h1>")
 });
 
 var user = JSON.parse(localStorage.getItem('user'));
