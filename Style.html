@@ -10,87 +10,98 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|PT+Sans|Roboto+Slab|Roboto:900" rel="stylesheet">
 	</head>
 	<body>
-		
-		<div id="togglecont">
-			<div id="toggle">
-				<div class="hamburger-menu">
-					<div class="bar"></div>
+		<div id="modal-container">
+			<div id="login-modal">
+				<h1>Login to Your Account</h1><br>
+				<form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				</form></div>
+			</div>
+			
+			<div id="overlay-toggle"></div>
+			<div id="togglecont">
+				<div id="toggle">
+					<div class="hamburger-menu">
+						<div class="bar"></div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="nav" id="nav" >
-			<div id="logo-cont"><h1 id="navlogo"><a id="logotxt" href="Happiness.html">happyindex</a></h1></div>
-			<div id="profilenav">
-				<a href="Profile.html">My Profile</a>
+			<div class="nav" id="nav" >
+				<div id="logo-cont"><h1 id="navlogo"><a id="logotxt" href="Happiness.html">happyindex</a></h1></div>
+				<div id="profilenav">
+					<a href="#">Login</a>
+				</div>
+				
+				<div class="onoff"  id="navcont">
+					<ul class="fade" id="navtabs">
+						<li class="navitems"><a class="navitemsA" href="index.html">Home</a></li>
+						<li class="navitems"><a class="navitemsA" href="About.html">About Us</a></li>
+						<li class="navitems"><a class="navitemsA" href="Contact.html">Contact Us</a></li>
+						<li class="navitems"><a class="navitemsA" href="Explore.html">Explore</a></li>
+						<li class="navitems"><a class="navitemsA" href="FAQ.html">FAQ</a></li>
+						<li class="navitems"><a class="navitemsA" href="Signup.html">Sign up</a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<div class="onoff"  id="navcont">
-				<ul class="fade" id="navtabs">
-					<li class="navitems"><a class="navitemsA" href="index.html">Home</a></li>
-					<li class="navitems"><a class="navitemsA" href="About.html">About Us</a></li>
-					<li class="navitems"><a class="navitemsA" href="Contact.html">Contact Us</a></li>
-					<li class="navitems"><a class="navitemsA" href="Explore.html">Explore</a></li>
-					<li class="navitems"><a class="navitemsA" href="FAQ.html">FAQ</a></li>
-					<li class="navitems"><a class="navitemsA" href="Signup.html">Sign Up</a></li>
+			<!--Insert Page HTML below this lines -->
+			<div id="container">
+				<h1>Style Guide</h1>
+				<h2>Font Guide</h2>
+				<p>The fonts used for this is site includes:</p>
+				<ul>
+					<li class ="font" ><p id="font5">Libre Baskerville</p></li>
+					<li class ="font" ><p id="font1">PT sans</p></li>
+					<li class ="font" ><p id="font2">Roboto</p></li>
+					<li class ="font" ><p id="font3">Roboto Slab</p></li>
+					<li class ="font" ><p id="font4">Lato</p></li>
 				</ul>
-			</div>
-		</div>
-		<!--Insert Page HTML below this lines -->
-		<div id="container">
-			<h1>Style Guide</h1>
-			<h2>Font Guide</h2>
-			<p>The fonts used for this is site includes:</p>
-			<ul>
-				<li class ="font" ><p id="font5">Libre Baskerville</p></li>
-				<li class ="font" ><p id="font1">PT sans</p></li>
-				<li class ="font" ><p id="font2">Roboto</p></li>
-				<li class ="font" ><p id="font3">Roboto Slab</p></li>
-				<li class ="font" ><p id="font4">Lato</p></li>
-			</ul>
-			<p>"Libre Baskerville" is used for text adjacent to images that possess short lengths and are intended to catch the eye</p>
-			<p>"PT sans" and "Roboto" are the main fonts used for general text purposes with "PT Sans being the primary font. </p>
-			<p>"Roboto Slab" is used for the main logo and important titles.</p>
-			<p>Lato is the primary font used for headings.</p>
-			<p>The default font size for this site is 16px however the recommended size for main page articles is 20px. </p>
-			<h2>Color scheme</h2>
-			<p>The color theme throughout the site are light and low saturation colors which was what the results from the initial survey suggested most people preferred. In general complementary colors are used when multiple colors are layered on each other</p>
-			<p>Darker low saturation colors are used when the User hovers or clicks on links to provide a nice visual contrast</p>
-			<p>When an image is adjacent to text container the color should approximately match</p>
-			<p>The colors were chosen for purpose of setting a light and soothing mood for the user</p>
-			<h2>Design layout</h2>
-			<p>The design was approached with the philosophy of being clean, minimalistic and simplistic while at the same time being functional and soothing to use.</p>
-			<p>The website was composed with Tullis' study in mind such that no parent "section" would have more than 62% covered by child elements and that overall the main sections would not take up more than 40% of screen space.</p>
-			
-			<!--- Footer sitemap -->
-			<div class="footer">
-				<div id="button"></div>
-				<div id="container">
-					<div id="cont">
-						<h1> Site Map </h1>
-						<div class="sitemap">
-							<nav>
-								<ul class="sitemapnav">
-									<li><a href="index.html"> Home</a></li>
-									<li><a href="Happiness.html"> Happiness </li>
-									<li><a href="About.html"> About Us </li>
-									<li><a href="Contact.html"> Contact Us </li>
-									<li><a href="Profile.html"> Profile </li>
-									<li><a href="Explore.html"> Explore </li>
-									<li><a href="FAQ.html"> FAQ </li>
-									<li><a href="Style.html"> Style Guide</li>
-									<li><a href="Privacy.html"> Privacy Policy </li>
-								</ul>
-							</nav>
+				<p>"Libre Baskerville" is used for text adjacent to images that possess short lengths and are intended to catch the eye</p>
+				<p>"PT sans" and "Roboto" are the main fonts used for general text purposes with "PT Sans being the primary font. </p>
+				<p>"Roboto Slab" is used for the main logo and important titles.</p>
+				<p>Lato is the primary font used for headings.</p>
+				<p>The default font size for this site is 16px however the recommended size for main page articles is 20px. </p>
+				<h2>Color scheme</h2>
+				<p>The color theme throughout the site are light and low saturation colors which was what the results from the initial survey suggested most people preferred. In general complementary colors are used when multiple colors are layered on each other</p>
+				<p>Darker low saturation colors are used when the User hovers or clicks on links to provide a nice visual contrast</p>
+				<p>When an image is adjacent to text container the color should approximately match</p>
+				<p>The colors were chosen for purpose of setting a light and soothing mood for the user</p>
+				<h2>Design layout</h2>
+				<p>The design was approached with the philosophy of being clean, minimalistic and simplistic while at the same time being functional and soothing to use.</p>
+				<p>The website was composed with Tullis' study in mind such that no parent "section" would have more than 62% covered by child elements and that overall the main sections would not take up more than 40% of screen space.</p>
+				
+				<!--- Footer sitemap -->
+				<div class="footer">
+					<div id="button"></div>
+					<div id="container">
+						<div id="cont">
+							<h1> Site Map </h1>
+							<div class="sitemap">
+								<nav>
+									<ul class="sitemapnav">
+										<li><a href="index.html"> Home</a></li>
+										<li><a href="Happiness.html"> Happiness </li>
+										<li><a href="About.html"> About Us </li>
+										<li><a href="Contact.html"> Contact Us </li>
+										<li><a href="#"> Profile </li>
+										<li><a href="Explore.html"> Explore </li>
+										<li><a href="FAQ.html"> FAQ </li>
+										<li><a href="Style.html"> Style Guide</li>
+										<li><a href="Privacy.html"> Privacy Policy </li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</body>
-	<!-- Scripts -->
-	<script type="text/javascript" src="./scripts/scrollnav.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./scripts/menu.js"></script>
-	<script type="text/javascript" src="./scripts/dragOverlay.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-</html>
+		</body>
+		<!-- Scripts -->
+		<script type="text/javascript" src="./scripts/scrollnav.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./scripts/menu.js"></script>
+		<script type="text/javascript" src="./scripts/dragOverlay.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./scripts/login.js"></script>
+	</html>

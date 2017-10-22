@@ -1,15 +1,12 @@
 .mainContainer {
   display    : block;
-
   width      : 80%;
   margin     : 235px auto;
-
   text-align : center;
 }
 
 .column {
   display       : inline-block;
-
   width         : 40%;
   margin-bottom : 16px;
   padding       : 15px;
@@ -22,10 +19,10 @@
   object-fit: contain;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .column {
     display : block;
-    width   : 100%;
+    width   : 90%;
   }
 }
 
@@ -36,14 +33,17 @@
   }
 
 .container {
-  padding : 0 16px;
+  padding : 20px 16px;
+  padding-bottom: 40px;
 }
 
 .container h2 {
+  padding: 10px;
   font-family : "Roboto", sans-serif;
 }
 
 .container p {
+  padding: 10px;
   font-family : 'PT Sans', sans-serif;
 }
 

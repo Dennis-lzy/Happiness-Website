@@ -16,8 +16,8 @@
 
 #msform {
 	width: 50%;
-	margin: 300px auto;
-  
+	margin: 200px auto;
+  	
 	text-align: center;
 	position: relative;
 }
@@ -30,6 +30,7 @@
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 10%;
+	margin-bottom: 200px;
 	transition: all ease 0.4s;
 	/*stacking fieldsets above each other*/
 	position: relative;
@@ -38,6 +39,8 @@
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
+
+
 /*inputs*/
 #gender input{
   display: inline-block;
@@ -222,5 +225,28 @@
 }
 
 .color-circle:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
+}
+
+.color-circle-active {
+  transform: scale(1.1, 1.1);
+  border: 2px solid black;
+}
+
+#shwPass {
+	width: 5% !important;
+	display: inline-block;
+}
+
+
+#showpass p {
+	width: 18% !important;
+	display: inline-block;
+	text-align: left;
+}
+
+#showpass {
+	display: inline-block;
+	float: left;
+	width: 100%;
 }

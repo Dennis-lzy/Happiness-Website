@@ -13,139 +13,150 @@
     <script type="text/javascript" src="./scripts/menu.js"></script>
   </head>
   <body>
-    
-    <div id="togglecont">
-      <div id="toggle">
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-        </div>
-      </div>
-    </div>
-    <div class="nav" id="nav" >
-      <div id="logo-cont"><h1 id="navlogo"><a id="logotxt" href="Happiness.html">happyindex</a></h1></div>
-      <div id="profilenav">
-        <a href="Profile.html">My Profile</a>
+    <div id="modal-container">
+      <div id="login-modal">
+        <h1>Login to Your Account</h1><br>
+        <form>
+          <input type="text" name="user" placeholder="Username">
+          <input type="password" name="pass" placeholder="Password">
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+        </form></div>
       </div>
       
-      <div class="onoff"  id="navcont">
-        <ul class="fade" id="navtabs">
-          <li class="navitems"><a class="navitemsA" href="index.html">Home</a></li>
-          <li class="navitems"><a class="navitemsA" href="About.html">About Us</a></li>
-          <li class="navitems"><a class="navitemsA" href="Contact.html">Contact Us</a></li>
-          <li class="navitems"><a class="navitemsA" href="Explore.html">Explore</a></li>
-          <li class="navitems"><a class="navitemsA" href="FAQ.html">FAQ</a></li>
-          <li class="navitems"><a class="navitemsA" href="Signup.html">Sign Up</a></li>
-        </ul>
+      <div id="overlay-toggle"></div>
+			<div id="togglecont">
+        <div id="toggle">
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--Insert Page HTML below this lines -->
-    <div id="container">
-      <div id="quiz">
-        <h1>Happiness calculator</h1>
-        
-        <p class="questions">
-          Example question 1?
-        </p>
-        
-        <div class="answers">
-          <div id="slidecontainer">
-            <input type="range" min="0" max="100" value="50" class="slider" id="q1">
-            <p>Value: <span id="val1"></span></p>
-          </div>
-          
-        </div>
-        <p class="questions">
-          Example question 2?
-        </p>
-        
-        <div class="answers">
-          <div id="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="q2">
-            <p>Value: <span id="val2"></span></p>
-          </div>
-          
-        </div>
-        <p class="questions">
-          Example question 3?
-        </p>
-        
-        <div class="answers">
-          <div id="slidecontainer">
-            <input type="range" min="0" max="100" value="50" class="slider" id="q3">
-            <p>Value: <span id="val3"></span></p>
-          </div>
-          
-        </div>
-        <p class="questions">
-          Example question 4?
-        </p>
-        
-        <div class="answers">
-          <div id="slidecontainer">
-            <input type="range" min="0" max="100" value="50" class="slider" id="q4">
-            <p>Value: <span id="val4"></span></p>
-          </div>
-          
-        </div>
-        <button class="button" onclick="calc()"><span id="button" onclick="calc()"> Calculate Happiness </span></button>
-        <div id="result">
-          <p> Your aggregated score calculated through a super complex secret algorithim is:<p id="score">?</p></p>
+      <div class="nav" id="nav" >
+        <div id="logo-cont"><h1 id="navlogo"><a id="logotxt" href="Happiness.html">happyindex</a></h1></div>
+        <div id="profilenav">
+          <a href="#">Login</a>
         </div>
         
+        <div class="onoff"  id="navcont">
+          <ul class="fade" id="navtabs">
+            <li class="navitems"><a class="navitemsA" href="index.html">Home</a></li>
+            <li class="navitems"><a class="navitemsA" href="About.html">About Us</a></li>
+            <li class="navitems"><a class="navitemsA" href="Contact.html">Contact Us</a></li>
+            <li class="navitems"><a class="navitemsA" href="Explore.html">Explore</a></li>
+            <li class="navitems"><a class="navitemsA" href="FAQ.html">FAQ</a></li>
+            <li class="navitems"><a class="navitemsA" href="Signup.html">Sign up</a></li>
+          </ul>
+        </div>
       </div>
-      <!--- Footer sitemap -->
-      <div class="footer">
-        <div id="button"></div>
-        <div id="container">
-          <div id="cont">
-            <h1> Site Map </h1>
-            <div class="sitemap">
-              <nav>
-                <ul class="sitemapnav">
-                  <li><a href="index.html"> Home</a></li>
-                  <li><a href="Happiness.html"> Happiness </li>
-                  <li><a href="About.html"> About Us </li>
-                  <li><a href="Contact.html"> Contact Us </li>
-                  <li><a href="Profile.html"> Profile </li>
-                  <li><a href="Explore.html"> Explore </li>
-                  <li><a href="FAQ.html"> FAQ </li>
-                  <li><a href="Style.html"> Style Guide</li>
-                  <li><a href="Privacy.html"> Privacy Policy </li>
-                </ul>
-              </nav>
+      <!--Insert Page HTML below this lines -->
+      <div id="container">
+        <div id="quiz">
+          <h1>Happiness calculator</h1>
+          
+          <p class="questions">
+            Example question 1?
+          </p>
+          
+          <div class="answers">
+            <div id="slidecontainer">
+              <input type="range" min="0" max="100" value="50" class="slider" id="q1">
+              <p>Value: <span id="val1"></span></p>
+            </div>
+            
+          </div>
+          <p class="questions">
+            Example question 2?
+          </p>
+          
+          <div class="answers">
+            <div id="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="q2">
+              <p>Value: <span id="val2"></span></p>
+            </div>
+            
+          </div>
+          <p class="questions">
+            Example question 3?
+          </p>
+          
+          <div class="answers">
+            <div id="slidecontainer">
+              <input type="range" min="0" max="100" value="50" class="slider" id="q3">
+              <p>Value: <span id="val3"></span></p>
+            </div>
+            
+          </div>
+          <p class="questions">
+            Example question 4?
+          </p>
+          
+          <div class="answers">
+            <div id="slidecontainer">
+              <input type="range" min="0" max="100" value="50" class="slider" id="q4">
+              <p>Value: <span id="val4"></span></p>
+            </div>
+            
+          </div>
+          <button class="button" onclick="calc()"><span id="button" onclick="calc()"> Calculate Happiness </span></button>
+          <div id="result">
+            <p> Your aggregated score calculated through a super complex secret algorithim is:<p id="score">?</p></p>
+          </div>
+          
+        </div>
+        <!--- Footer sitemap -->
+        <div class="footer">
+          <div id="button"></div>
+          <div id="container">
+            <div id="cont">
+              <h1> Site Map </h1>
+              <div class="sitemap">
+                <nav>
+                  <ul class="sitemapnav">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="Happiness.html"> Happiness </li>
+                    <li><a href="About.html"> About Us </li>
+                    <li><a href="Contact.html"> Contact Us </li>
+                    <li><a href="#"> Profile </li>
+                    <li><a href="Explore.html"> Explore </li>
+                    <li><a href="FAQ.html"> FAQ </li>
+                    <li><a href="Style.html"> Style Guide</li>
+                    <li><a href="Privacy.html"> Privacy Policy </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <div id="button"></div>
-        <div id="container">
-          <div id="cont">
-            <h1> Site Map </h1>
-            <div class="sitemap">
-              <nav>
-                <ul class="sitemapnav">
-                  <li><a href="index.html"> Home</a></li>
-                  <li><a href="Happiness.html"> Happiness </li>
-                  <li><a href="About.html"> About Us </li>
-                  <li><a href="Contact.html"> Contact Us </li>
-                  <li><a href="Profile.html"> Profile </li>
-                  <li><a href="Explore.html"> Explore </li>
-                  <li><a href="FAQ.html"> FAQ </li>
-                  <li><a href="Style.html"> Style Guide</li>
-                  <li><a href="Privacy.html"> Privacy Policy </li>
-                </ul>
-              </nav>
+        <div class="footer">
+          <div id="button"></div>
+          <div id="container">
+            <div id="cont">
+              <h1> Site Map </h1>
+              <div class="sitemap">
+                <nav>
+                  <ul class="sitemapnav">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="Happiness.html"> Happiness </li>
+                    <li><a href="About.html"> About Us </li>
+                    <li><a href="Contact.html"> Contact Us </li>
+                    <li><a href="#"> Profile </li>
+                    <li><a href="Explore.html"> Explore </li>
+                    <li><a href="FAQ.html"> FAQ </li>
+                    <li><a href="Style.html"> Style Guide</li>
+                    <li><a href="Privacy.html"> Privacy Policy </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </body>
-    <!-- Scripts -->
-    <script type="text/javascript" src="./scripts/scrollnav.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/menu.js"></script>
-    <script type="text/javascript" src="./scripts/dragOverlay.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./scripts/survey.js"></script>
-  </html>
+      </body>
+      <!-- Scripts -->
+      <script type="text/javascript" src="./scripts/scrollnav.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="./scripts/menu.js"></script>
+      <script type="text/javascript" src="./scripts/dragOverlay.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="./scripts/login.js"></script>
+      <script type="text/javascript" src="./scripts/survey.js"></script>
+    </html>

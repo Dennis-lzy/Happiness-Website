@@ -47,3 +47,6 @@ function scrollNavFunction() {
   } 
 }
 }
+
+//lets me access user details, too lazy to add new script to every page
+var user = JSON.parse(localStorage.getItem('user'));
