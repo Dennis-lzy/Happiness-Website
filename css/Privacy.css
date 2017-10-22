@@ -1,0 +1,11 @@
+#container {
+  position: relative;
+  display: block;
+  width: 70%;
+  margin: 235px auto;
+  overflow:hidden;
+}
+
+#policy h1, #policy h2, #policy h3, #policy p {
+  font-family: 'PT Sans', sans-serif;
+}

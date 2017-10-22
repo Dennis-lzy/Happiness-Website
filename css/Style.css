@@ -1,0 +1,44 @@
+#container {
+  position: relative;
+  display: block;
+  width: 60%;
+  margin: 235px auto;
+  overflow:hidden;
+}
+
+ p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+
+#container h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+}
+
+#container h2{
+  font-family: 'lato', sans-serif;
+  border-bottom: 3px solid;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+ul p{
+   font-size: 30px;
+}
+
+#font2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#font3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+#font4 {
+  font-family: 'Lato', sans-serif;
+}
+
+#font5 {
+  font-family: 'Libre Baskerville', serif;
+}
