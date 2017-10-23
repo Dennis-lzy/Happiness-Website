@@ -1,12 +1,12 @@
 window.onscroll = function() {scrollNavFunction()};
 
-function changeNavItems(px) {
+/*function changeNavItems(px) {
   var x = document.querySelectorAll(".navitemsA");
   var i;
   for (i = 0; i < x.length; i++) {
     x[i].style.paddingTop = px;
     }
-}
+}*/
 
 function scrollNavFunction() {
   $(".fade").css("transition","0.3s")
@@ -49,4 +49,3 @@ function scrollNavFunction() {
 }
 
 //lets me access user details, too lazy to add new script to every page
-var user = JSON.parse(localStorage.getItem('user'));

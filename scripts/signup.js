@@ -105,7 +105,7 @@ $(".color-circle").click(function() {
 $(".submit").click(function() {
     var username = $("#username").val();
     var email = $("#email").val();
-    var pass = $("#username").val();
+    var pass = $("#pass").val();
     var cPass = $("#cPass").val();
     var fname = $("#fname").val();
     var lname = $("#lname").val();

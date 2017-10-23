@@ -55,6 +55,17 @@ img {
   width: 90%;
  }
 
+.card > p {
+  display: block;
+  margin: auto;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  width: 90%;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+}
+
 #left2, #right2 {
   background-color: 	#82D9BB;
 }

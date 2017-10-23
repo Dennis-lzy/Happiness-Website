@@ -5,12 +5,11 @@
   margin: 270px auto;
   overflow:hidden;
   text-align: center;
- 
+  background-color: #C6A58F; 
+  padding: 0px;
   }
 
-#quiz * {
-  font-family: "PT Sans", serif;
-}
+
 
 
 #quiz {
@@ -20,12 +19,12 @@
   text-align: center;
   margin: 0 auto;
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 #quiz > h1 {
   text-align: center;
-  padding-top: 25px;
+  padding: 25px;
   font-size: 50px;
   font-family: "Libre Baskerville", serif;
 }
@@ -33,7 +32,8 @@
 .questions {
   font-size: 28px;
   font-weight: 700;
-  font-style: italic;
+  font-style: bold;
+  font-family: "Roboto";
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
   padding: 20px;
@@ -49,10 +49,12 @@
 .answers div {
   width: 50%;
   margin: 20px auto;
-  padding-bottom: 15px;
   padding: 10px;
 }
 
+.answers p {
+  margin-top: 10px;
+}
 
 /* slider start */
 #slidecontainer {
@@ -128,6 +130,13 @@
   right: 0;
 }
 
+#result p {
+  margin: 10px auto;
+}
+
+#result {
+  padding: 20px;
+}
 #score {
   font-size: 3vw;
 }
