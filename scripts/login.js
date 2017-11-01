@@ -1,4 +1,21 @@
 var user = JSON.parse(localStorage.getItem('user'));
+var content = [
+  "https://thehappinesstrap.com/7-ways-change-behaviour-for-good/",
+  "https://www.youtube.com/embed/93LFNtcR1Ok",
+  "https://www.youtube.com/embed/eiPxLpYlw4I",
+  "Content1.html",
+  "https://www.youtube.com/embed/tQ5vx84DQUU",
+  "https://www.youtube.com/embed/4q1dgn_C0AU",
+  "https://www.youtube.com/embed/IIWQeMFncm8",
+  "https://www.youtube.com/embed/GlK1A5h8i10"
+];
+localStorage.setItem("content",JSON.stringify(content));
+
+var userLogged = sessionStorage.getItem("userLogged");
+if (userLogged) {
+  $("#profilenav").html("<a href=\"Profile.html\"></a>");
+  $("#profilenav a").html(user.FirstName);
+}
 
 $("#profilenav").click(function(){
 
@@ -29,6 +46,8 @@ $(".loginmodal-submit").click(function() {
     	$("#profilenav").html("<a href=\"Profile.html\"></a>");
     	$("#profilenav a").html(user.FirstName);
     	console.log("Login2");
+      userLogged=true;
+      sessionStorage.setItem("userLogged", userLogged)
     }
 });
 

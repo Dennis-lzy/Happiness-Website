@@ -1,66 +1,139 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Profile </title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="./css/reset.css">
-		<link rel="stylesheet" type="text/css" href="./css/.css">
-		<link rel="stylesheet" type="text/css" href="./css/Default.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|PT+Sans|Roboto+Slab|Roboto:900|Playfair+Display" rel="stylesheet">
-		<script type="text/javascript" src="./scripts/scrollnav.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="./scripts/menu.js"></script>
-	</head>
-	<body>
-		<div id="modal-container">
-			<div id="login-modal">
-				<h1>Login to Your Account</h1><br>
-				<form>
-					<input id="login-username" type="text" name="user" placeholder="Username">
-					<input id="login-pass" type="password" name="pass" placeholder="Password">
-					<input id="login-submit" type="submit" name="login" class="login loginmodal-submit" value="Login">
-				</form></div>
-			</div>
-			
-			<div id="overlay-toggle"></div>
-			<div id="togglecont">
-				<div id="toggle">
-					<div class="hamburger-menu">
-						<div class="bar"></div>
-					</div>
-				</div>
-			</div>
-			<div class="nav" id="nav" >
-				<div id="logo-cont"><h1 id="navlogo"><a id="logotxt" href="Happiness.html">happyindex</a></h1></div>
-				<div id="profilenav">
-					<a href="#">Login</a>
-				</div>
-				
-				<div class="onoff"  id="navcont">
-					<ul class="fade" id="navtabs">
-						<li class="navitems"><a class="navitemsA" href="index.html">Home</a></li>
-						<li class="navitems"><a class="navitemsA" href="About.html">About Us</a></li>
-						<li class="navitems"><a class="navitemsA" href="Contact.html">Contact Us</a></li>
-						<li class="navitems"><a class="navitemsA" href="Explore.html">Explore</a></li>
-						<li class="navitems"><a class="navitemsA" href="FAQ.html">FAQ</a></li>
-						<li class="navitems"><a class="navitemsA" href="Signup.html">Sign up</a></li>
-					</ul>
-				</div>
-			</div>
-			<!--Insert Page HTML below this lines -->
-			
-			<!--- Footer sitemap -->
-			<div class="footer">
-				<div id="button"></div>
-				<div id="container">
-					<div id="cont">
-						<h1> Site Map </h1>
-						<div class="sitemap">
-							<nav>
-								<ul class="sitemapnav">
-									<li><a href="index.html"> Home</a></li>
-									<li><a href="Happiness.html"> Happiness </li>
+
+<head>
+    <title>Profile </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/Default.css">
+    <link rel="stylesheet" type="text/css" href="./css/Profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|PT+Sans|Roboto+Slab|Roboto:900|Playfair+Display" rel="stylesheet">
+</head>
+
+<body>
+    <div id="modal-container">
+        <div id="login-modal">
+            <h1>Login to Your Account</h1>
+            <br>
+            <form>
+                <input id="login-username" type="text" name="user" placeholder="Username">
+                <input id="login-pass" type="password" name="pass" placeholder="Password">
+                <input id="login-submit" type="submit" name="login" class="login loginmodal-submit" value="Login">
+            </form>
+            <h2 id="login-remind"></h2>
+        </div>
+    </div>
+    <div id="overlay-toggle"></div>
+    <div id="togglecont">
+        <div id="toggle">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="nav" id="nav">
+        <div id="logo-cont">
+            <h1 id="navlogo"><a id="logotxt" href="Happiness.html">happyindex</a></h1></div>
+        <div id="profilenav">
+            <a href="#">Login</a>
+        </div>
+        <div class="onoff" id="navcont">
+            <ul class="fade" id="navtabs">
+                <li class="navitems"><a class="navitemsA" href="index.html">Home</a></li>
+                <li class="navitems"><a class="navitemsA" href="About.html">About Us</a></li>
+                <li class="navitems"><a class="navitemsA" href="Contact.html">Contact Us</a></li>
+                <li class="navitems"><a class="navitemsA" href="Explore.html">Explore</a></li>
+                <li class="navitems"><a class="navitemsA" href="FAQ.html">FAQ</a></li>
+                <li class="navitems"><a class="navitemsA" href="Signup.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Insert Page HTML below this lines -->
+    <div id="container">
+        <div id="profile-pic">
+            <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/20229328_10158860114865198_4242710613673881902_n.jpg?oh=b041523fe5664eb88c65abc9075dac95&oe=5A622F14">
+        </div>
+        <div id="user-details">
+        <p id="name">Name: Dennis Liu</p>
+        <p id="gender">Gender: Male</p>
+        <p id="birthday">Birthday: 12/May/1994</p>
+        <p id="description"> About me : <br> Studies compsci at usyd </p>
+        </div>
+        <div id="happy-score"><p> Happiness Rating:</p></div>
+
+        <div id="video-embedding"><input id="profileImg" type="text" name="profileImg" placeholder="Post a video" /></div>
+        <div id="post-container">
+            <div class="content-box">
+                <div class="iframe-container">
+                    <a class="content-link" href="#">
+                        <div class="overlay-preview">
+                            <p>Description</p>
+                        </div>
+                    </a>
+                    <iframe class="content-preview" src="https://www.youtube.com/embed/GlK1A5h8i10" scrolling="no"></iframe>
+                </div>
+                <div class="content-stat">
+                    <a class="content-link" href="#">
+                        <p class="content-title">Lorem ipsum</p>
+                    </a>
+                    <div class="content-poster">
+                        <img src="https://beebom-redkapmedia.netdna-ssl.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg">
+                        <p> Useripsum </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="iframe-container">
+                    <a class="content-link" href="#">
+                        <div class="overlay-preview">
+                            <p>Description</p>
+                        </div>
+                    </a>
+                    <iframe class="content-preview" src="https://www.youtube.com/embed/GlK1A5h8i10" scrolling="no"></iframe>
+                </div>
+                <div class="content-stat">
+                    <a class="content-link" href="#">
+                        <p class="content-title">Lorem ipsum</p>
+                    </a>
+                    <div class="content-poster">
+                        <img src="https://beebom-redkapmedia.netdna-ssl.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg">
+                        <p> Useripsum </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="iframe-container">
+                    <a class="content-link" href="#">
+                        <div class="overlay-preview">
+                            <p>Description</p>
+                        </div>
+                    </a>
+                    <iframe class="content-preview" src="https://www.youtube.com/embed/GlK1A5h8i10" scrolling="no"></iframe>
+                </div>
+                <div class="content-stat">
+                    <a class="content-link" href="#">
+                        <p class="content-title">Lorem ipsum</p>
+                    </a>
+                    <div class="content-poster">
+                        <img src="https://beebom-redkapmedia.netdna-ssl.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg">
+                        <p> Useripsum </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Footer sitemap -->
+    <div class="footer">
+        <div id="button"></div>
+        <div id="container">
+            <div id="cont">
+                <h1> Site Map </h1>
+                <div class="sitemap">
+                    <nav>
+                        <ul class="sitemapnav">
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="Happiness.html"> Happiness </li>
 									<li><a href="About.html"> About Us </li>
 									<li><a href="Contact.html"> Contact Us </li>
 									<li><a href="#"> Profile </li>
@@ -82,4 +155,5 @@
 		<script type="text/javascript" src="./scripts/dragOverlay.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="./scripts/login.js"></script>
+		<script type="text/javascript" src="./scripts/profile.js"></script>
 	</html>

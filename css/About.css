@@ -88,4 +88,5 @@
 
 .button:active {
   background-color : #BA7E57;
+  transition       : all ease 0.2s;
 }

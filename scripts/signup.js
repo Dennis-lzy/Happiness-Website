@@ -127,7 +127,7 @@ $(".submit").click(function() {
     	Birthday: bDay + "/" + bMonth + "/" + bYear ,
     	profilePic: profileImg,
     	profileThemeColor: themeColor,
-    	profileDescription: profileD
+    	profileDescription: profileD,
     };
     localStorage.setItem("user",JSON.stringify(user1));
     var user = JSON.parse(localStorage.getItem('user'));

@@ -1,0 +1,22 @@
+
+#container {
+  margin: 200px auto;
+  width: 70%; 
+}
+
+#container h1 {
+  font-family: "libre Baskerville";
+  font-size: 2vw;
+  margin: 20px auto;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+
+#container p{
+  font-family: "Lato";
+  padding: 8px;
+  font-size: 1.1vw;
+  width: 90%;
+  margin-left:3%;
+}

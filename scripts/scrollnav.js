@@ -34,7 +34,7 @@ function scrollNavFunction() {
   document.getElementById("navcont").style.marginTop = "0px";
   document.getElementById("nav").style.backgroundColor = "#9DA8C9";
   document.getElementById("nav").style.height = "39.09px";
-  changeNavItems("20px");
+  //changeNavItems("20px");
 
    document.getElementById("toggle").style.marginTop = "6.5px"
 
@@ -42,7 +42,7 @@ function scrollNavFunction() {
     document.getElementById("navcont").style.marginTop = "50px";
     document.getElementById("nav").style.backgroundColor = "#ffffff";
     document.getElementById("nav").style.height = "78.1px";
-   changeNavItems("10px");
+   //changeNavItems("10px");
    document.getElementById("toggle").style.marginTop = "54px";
   } 
 }

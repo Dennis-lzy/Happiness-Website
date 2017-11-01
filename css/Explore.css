@@ -1,0 +1,162 @@
+#container {
+  margin: 200px auto;
+  width: 75%; 
+}
+
+#container h1 {
+  font-family: "libre Baskerville";
+  font-size: 2vw;
+  margin: 20px auto;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+
+.content-grid {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.content-row {
+   width: 100%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2vw;
+}
+
+
+.content-box {
+  background-color: #A7CBF9;
+  width: 25%;
+  height: 14vw;
+  display:block;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.content-preview {
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #6DAAF9;
+  
+}
+
+.content-stat {
+  font-family: "Roboto";
+  font-size: 1.2vw;
+  padding:10px;
+  padding-top: 0.5vw;
+  text-overflow:ellipsis;
+  height: 30%;
+  width: 95%;
+  display: inline-block;
+}
+
+.content-title {
+ color: black;
+ text-decoration: none;
+}
+
+.content-poster{
+  width: 100%;
+  display: inline-block;
+  height:1.3vw;
+  margin-top: 0.45vw;
+  margin-left: 4px;
+}
+
+.content-poster img{
+  height: 100%;
+  width: 1.4vw;
+  border-radius: 4px;
+  float: left;
+  margin-right:5px;
+}
+
+.content-poster p {
+  font-size: 0.7 vw;
+  font-family: "lato";
+  padding-left: 4px;
+  width: 70%
+}
+
+.favourite-btn {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+   cursor: pointer;
+   transition: 0.3s ease;
+  width: 2vw;
+  height: 2vw;
+  background-color: #fff;
+  position: absolute;
+  margin-top:-2vw;
+  margin-left: 70%;
+  border-radius: 50%;
+  color: #DBC7C7;
+}
+
+
+.favourite-btn:hover{
+  transform: scale(1.1,1.1);
+  background-color: #DB7878;
+  color: white !important;
+}
+
+.btn-clicked{
+  background-color: white;
+  color: #D14242 !important;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  margin-top:-2vw;
+  margin-left: 70%;
+  border-radius: 50%;
+}
+
+.btn-clicked:hover{
+  transform: scale(1.1,1.1);
+  background-color: white;
+  color: #D14242 !important;
+}
+
+.iframe-container {
+  margin:0 auto;
+  width: 100%;
+  height: 70%;  
+}
+
+a .overlay-preview{
+    z-index:1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    padding: 15px 15px 15px 15px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    background-color:#C2CDD1;
+    position:absolute;
+    text-decoration: none;
+    color:black;
+  }
+
+.overlay-preview:hover{
+  opacity:0.7;
+}
+
+a>p{
+  text-decoration: none;
+}
+
+a:visited:link{
+  text-decoration: none;
+}
