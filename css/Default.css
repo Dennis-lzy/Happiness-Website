@@ -170,7 +170,7 @@
   z-index    : 999;
 
   overflow   : hidden;
-  height     : 30px;
+  height     : 1.5625vw;
   width      : 100%;
   margin     : 0 auto;
 
@@ -178,7 +178,7 @@
 }
 
 .footer:hover {
-  height     : 120px;
+  height     : 6.25vw;
   transition : all 1s ease;
 }
 
@@ -189,7 +189,7 @@
 
   height     : 100%;
   width      : 100%;
-  margin-top : -40px;
+  margin-top : -1.6vw;
 
   background : #5C8195;
 }
