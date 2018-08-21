@@ -11,10 +11,9 @@
 #container {
   position: relative;
   display: block;
-  width: 80%;
-  margin: -50px auto;
+  width: 70%;
+  margin: 100px auto;
   overflow:hidden;
-  height: 600px;
 }
 
 .col {
